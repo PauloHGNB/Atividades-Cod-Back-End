@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+button:hover {
+  cursor: pointer;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.calc {
+  background-color: rgb(9, 168, 196);
+  padding: 30px;
+  border-radius: 10px;
+  display: none;
+}
+.calc.active {
+  display: block;
+}
+.calc input,
+.calc select,
+.calc button {
+  margin: 10px 0%;
+  padding: 10px;
+  width: 100%;
+}
+
+.nav-links {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.nav-links a {
+  margin: 10px;
+  text-decoration: none;
+}

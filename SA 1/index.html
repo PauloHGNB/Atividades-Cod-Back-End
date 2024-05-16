@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadoras da SA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <div class="nav-links">
+        <a href="#" id="calc1">Calculadora Básica</a>
+        <a href="#" id="calc2">Calculadora IMC</a>
+        <a href="#" id="calc3">Calculadora de Combustível</a>
+      </div>
+
+      <div id="calc1Div" class="calc active">
+        <h2>Calculadora Básica</h2>
+        <form id="calc1Form">
+          <input
+            type="number"
+            id="num1"
+            placeholder="Primeiro número"
+            required
+          />
+          <input
+            type="number"
+            id="num2"
+            placeholder="Segundo número"
+            required
+          />
+          <select id="operaçao" required>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+          <button type="submit">Calcular</button>
+        </form>
+        <h3 id="calc1Result">RESULTADO:</h3>
+      </div>
+
+      <div id="calc2Div" class="calc">
+        <h2>Calculadora IMC</h2>
+        <form id="calc2Form">
+          <input
+            type="number"
+            id="altura"
+            placeholder="Altura (em metros)"
+            step="0.01"
+            required
+          />
+          <input type="number" id="peso" placeholder="Peso (em kg)" required />
+          <button type="submit">Calcular IMC</button>
+        </form>
+        <h3 id="calc2Result">RESULTADO:</h3>
+      </div>
+
+      <div id="calc3Div" class="calc">
+        <h2>Calculadora de Combustível</h2>
+        <form id="calc3Form">
+          <input
+            type="number"
+            id="gasolinaPreco"
+            placeholder="Preço do litro da gasolina (em R$)"
+            step="0.01"
+            required
+          />
+          <input
+            type="number"
+            id="alcoolPreco"
+            placeholder="Preço do litro do álcool (em R$)"
+            step="0.01"
+            required
+          />
+          <input
+            type="number"
+            id="gasolinaLitro"
+            placeholder="Quantidade de litros de gasolina"
+            step="1"
+            required
+          />
+          <input
+            type="number"
+            id="alcoolLitro"
+            placeholder="Quantidade de litros de álcool"
+            step="1"
+            required
+          />
+          <button type="submit">Calcular</button>
+        </form>
+        <h3 id="calc3Result">RESULTADO:</h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
