@@ -1,0 +1,38 @@
+<!-- // 3.
+
+// Utilizando DOM: Crie um programa que leia os dados de um aluno: nome, matrícula,
+//      disciplina, nota.
+//    - Se a nota do aluno for maior ou igual a 60 exiba no console “Aprovado”.
+//    - Se a nota do aluno for menor que 60 porém maior ou igual a 50
+//    exiba no console “Em recuperação”
+//    - Se a nota do aluno for menor que 50 exiba no console “Reprovado”.
+//    criar nova propriedade chamada situacao para o aluno. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dados do Aluno</title>
+  </head>
+  <body>
+    <h1>Formulário de Dados do Aluno</h1>
+    <form id="formularioAluno">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" /><br /><br />
+
+      <label for="matricula">Matrícula:</label>
+      <input type="text" id="matricula" name="matricula" /><br /><br />
+
+      <label for="disciplina">Disciplina:</label>
+      <input type="text" id="disciplina" name="disciplina" /><br /><br />
+
+      <label for="nota">Nota:</label>
+      <input type="text" id="nota" name="nota" /><br /><br />
+
+      <button type="button" onclick="reprovadoOuNao()">Enviar</button>
+    </form>
+    <p id="resultado"></p>
+    <script src="script.js"></script>
+  </body>
+</html>

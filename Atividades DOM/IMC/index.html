@@ -1,0 +1,32 @@
+<!-- // 1. Utilizando DOM: Tendo como dados de entrada o peso (em quilogramas)
+//    e a altura (em metros) de uma pessoa,
+//    crie um programa que calcule o Índice de Massa Corporal (IMC) dessa pessoa.
+// Calcule o IMC usando a fórmula: IMC = peso / (altura * altura).
+// Classifique o IMC da seguinte forma:
+// - IMC < 18,5 Kg/m²: Abaixo do Peso
+// - IMC >= 18,5 Kg/m² e < 24,9 Kg/m²: Peso Normal
+// - IMC >= 25 Kg/m² e < 29,9 Kg/m²: Sobrepeso
+// - IMC >= 30 Kg/m² e < 34.9 Kg/m²: Obesidade Grau I
+// - IMC >= 35 Kg/m² e < 39.9 Kg/m²: Obesidade Grau II
+// - IMC >= 39.9 Kg/m²: Obesidade Grau III -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+  </head>
+  <body>
+    <h1>Calculadora de IMC</h1>
+    <form id="imc">
+      <label for="altura">Altura (m):</label>
+      <input type="text" id="altura" name="altura" /><br />
+      <label for="peso">Peso (kg):</label>
+      <input type="text" id="peso" name="peso" /><br />
+      <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+    </form>
+    <p id="resultado"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
