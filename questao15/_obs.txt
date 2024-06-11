@@ -1,0 +1,10 @@
+ex.:
+
+{
+    "id": 3,
+    "nome": "Desinfetante",
+    "quantidade": 5000,
+    "unidadeMedida": "UN",
+    "preco": 15,
+    "dataCadastro": "2024-06-26"
+  }
